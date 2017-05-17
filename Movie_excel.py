@@ -39,7 +39,7 @@ def votes(soup):
         return "Votes not available"
 
 
-workbook = xlsxwriter.Workbook('listofmovies.xlsx')
+workbook = xlsxwriter.Workbook('listofmovies.xlsx')#Name of excel file is listofmovies change according to your needs
 worksheet = workbook.add_worksheet()
 bold = workbook.add_format({'bold': 1})
 worksheet.write('A1', 'Title', bold)
@@ -81,4 +81,4 @@ for name in listofmovies:
         soup = ''
         row = row + 1
     except:
-        print "SHITTT"
+        print "Information Not Available"
