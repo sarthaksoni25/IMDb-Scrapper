@@ -1,5 +1,4 @@
-#from list import *
-listofmovies = ['Udaan','antman','avengers','zombieland','21','warrior']
+from list import *
 import requests
 import xlsxwriter
 from bs4 import BeautifulSoup
